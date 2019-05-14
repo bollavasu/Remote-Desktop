@@ -1,0 +1,26 @@
+
+https://www.youtube.com/watch?v=ElEg9ri5yQA
+
+Creating Remote Desktop Connection in AWS EC2
+
+1)Create Windows AWS EC2 instance by using following AMI
+
+  Microsoft Windows Server 2019 Base - ami-0204606704df03e7e
+  
+2)Security Group is added by default while creating the instance (to enable RDP)
+
+  Type (RDP), Protocol (TCP), Port Range (3389), Source (Custom) (0.0.0.0/0)
+  
+3)Once instance is started, click on Connect button, then click on Generate Password
+  browse our private key file in Key Pair Path
+  click on Decrypt Password  (it will give the password) [it will show the User name (Administrator) and Public DNS as well]
+  
+4)Click on Download Remote Desktop File (.rdp file will be downloaded to our system)
+
+5)Double click on .rdp file and enter password (we will be connected to Remote Desktop)
+
+6)we can connect to Remote Desktop in another way as well
+  Start -> Remote Desktop Connection
+  Enter hostname (Public DNS), Username and Password
+  we will be connected to Remote Desktop
+  
